@@ -1,7 +1,17 @@
 import { Typography, Button } from '@material-tailwind/react';
 import GenteMalhando  from './assets/BG/gente-se-exercitando.webp';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React from 'react';
+
 export default function App() {
+
+    React.useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+
+
     return (
         <>
             <section className='w-screen h-screen bg-no-repeat bg-center bg-cover relative' style={{ backgroundImage: `url(${GenteMalhando})`}}>
@@ -37,8 +47,19 @@ export default function App() {
 
                 </div>
             </section>
-            <section className='w-screen h-screen bg-white -mt-1' >
-              
+            <section className='w-screen h-screen bg-white -mt-1 grid grid-cols-2 gap-6 px-40 py-12' >
+                <div className='bg-gray-100 w-full h-full flex flex-col items-center justify-center gap-6 overflow-hidden'>
+                    <Typography placeholder={''} data-aos='fade-right' variant='h2'>Apoio para uma Vida Saudável Sustentável</Typography>
+                    <Typography className='' variant='lead' placeholder={''} data-aos="fade-right" data-aos-delay={200}>
+                Alcançar seu objetivo de perda de peso é uma grande vitória. Entendemos os desafios de manter esse sucesso a longo prazo e estamos aqui para apoiá-lo em cada passo dessa jornada para um estilo de vida saudável e sustentável.
+                    </Typography>
+
+                    <Button className='' size='lg' placeholder={''} color='green' fullWidth data-aos="fade-right" data-aos-delay={400}>Saiba mais</Button>
+                </div>
+
+                <div className='bg-gray-100 w-full h-full '>
+
+                </div>
             </section>
         </>
     );
