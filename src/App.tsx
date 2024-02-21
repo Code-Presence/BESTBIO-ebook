@@ -1,5 +1,9 @@
 import { Typography, Button } from '@material-tailwind/react';
+
 import GenteMalhando  from './assets/BG/gente-se-exercitando.webp';
+import GenteNoCampo  from './assets/BG/gentee-no-campo.webp';
+
+import Ebook1  from './assets/Mocks/BookMockup-1.png';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -15,7 +19,7 @@ export default function App() {
     return (
         <>
             <section className='w-screen h-screen bg-no-repeat bg-center bg-cover relative' style={{ backgroundImage: `url(${GenteMalhando})`}}>
-                <div className='w-full h-full  backdrop-blur-[3px] px-40 pt-28 bg-gradient-to-r relative from-[rgba(186,206,74,.9)] to-[rgba(126,217,86,.9)] flex flex-col items-center gap-12'>
+                <div className='w-full h-full  backdrop-blur-[3px] px-64 pt-28 bg-gradient-to-r relative from-[rgba(186,206,74,.9)] to-[rgba(126,217,86,.9)] flex flex-col items-center gap-12'>
                     <span className='w-full text-white flex flex-col items-center'>
                         {/* <Typography variant='h1' placeholder={''}>Evite o Efeito Sanfona </Typography> */}
                         <Typography variant='h2' className='text-center' placeholder={''}>Descubra o segredo para <br /> manter o peso e viver com saúde!</Typography>
@@ -28,10 +32,6 @@ export default function App() {
                     <Button placeholder={''} className='text-xl shadow-md' color='green' size='lg'>Estou cansada(o) de viver voltando para meu peso antigo</Button>
 
                     <div className='w-full absolute bottom-0 flex'>
-                        {/* <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,60 C 67.27179487179487,72.25641025641026 134.54358974358973,84.51282051282053 212,89 C 289.45641025641027,93.48717948717947 377.09743589743584,90.2051282051282 461,75 C 544.9025641025642,59.7948717948718 625.0666666666666,32.66666666666667 703,35 C 780.9333333333334,37.33333333333333 856.6358974358976,69.12820512820512 933,79 C 1009.3641025641024,88.87179487179488 1086.3897435897436,76.82051282051282 1171,70 C 1255.6102564102564,63.179487179487175 1347.8051282051283,61.58974358974359 1440,60 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.265" className="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,140 C 103.40769230769229,136.02307692307693 206.81538461538457,132.04615384615386 272,132 C 337.1846153846154,131.95384615384614 364.14615384615394,135.83846153846153 438,139 C 511.85384615384606,142.16153846153847 632.5999999999999,144.59999999999997 719,146 C 805.4000000000001,147.40000000000003 857.4538461538464,147.7615384615385 924,150 C 990.5461538461536,152.2384615384615 1071.5846153846153,156.35384615384615 1160,155 C 1248.4153846153847,153.64615384615385 1344.2076923076925,146.82307692307694 1440,140 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.4" className="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,400 L 0,220 C 69.13846153846154,228.9923076923077 138.27692307692308,237.9846153846154 213,241 C 287.7230769230769,244.0153846153846 368.03076923076924,241.0538461538461 450,228 C 531.9692307692308,214.9461538461539 615.6,191.80000000000004 700,193 C 784.4,194.19999999999996 869.5692307692308,219.74615384615382 942,232 C 1014.4307692307692,244.25384615384618 1074.123076923077,243.21538461538464 1155,239 C 1235.876923076923,234.78461538461536 1337.9384615384615,227.39230769230767 1440,220 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,400 L 0,300 C 89.38205128205132,314.8307692307692 178.76410256410264,329.66153846153844 265,327 C 351.23589743589736,324.33846153846156 434.32564102564095,304.1846153846154 518,291 C 601.674358974359,277.8153846153846 685.9333333333334,271.59999999999997 748,271 C 810.0666666666666,270.40000000000003 849.9410256410256,275.41538461538465 927,279 C 1004.0589743589744,282.58461538461535 1118.302564102564,284.73846153846154 1210,288 C 1301.697435897436,291.26153846153846 1370.8487179487179,295.63076923076926 1440,300 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
-                        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,60 C 67.27179487179487,72.25641025641026 134.54358974358973,84.51282051282053 212,89 C 289.45641025641027,93.48717948717947 377.09743589743584,90.2051282051282 461,75 C 544.9025641025642,59.7948717948718 625.0666666666666,32.66666666666667 703,35 C 780.9333333333334,37.33333333333333 856.6358974358976,69.12820512820512 933,79 C 1009.3641025641024,88.87179487179488 1086.3897435897436,76.82051282051282 1171,70 C 1255.6102564102564,63.179487179487175 1347.8051282051283,61.58974358974359 1440,60 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.265" className="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,140 C 103.40769230769229,136.02307692307693 206.81538461538457,132.04615384615386 272,132 C 337.1846153846154,131.95384615384614 364.14615384615394,135.83846153846153 438,139 C 511.85384615384606,142.16153846153847 632.5999999999999,144.59999999999997 719,146 C 805.4000000000001,147.40000000000003 857.4538461538464,147.7615384615385 924,150 C 990.5461538461536,152.2384615384615 1071.5846153846153,156.35384615384615 1160,155 C 1248.4153846153847,153.64615384615385 1344.2076923076925,146.82307692307694 1440,140 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.4" className="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,400 L 0,220 C 69.13846153846154,228.9923076923077 138.27692307692308,237.9846153846154 213,241 C 287.7230769230769,244.0153846153846 368.03076923076924,241.0538461538461 450,228 C 531.9692307692308,214.9461538461539 615.6,191.80000000000004 700,193 C 784.4,194.19999999999996 869.5692307692308,219.74615384615382 942,232 C 1014.4307692307692,244.25384615384618 1074.123076923077,243.21538461538464 1155,239 C 1235.876923076923,234.78461538461536 1337.9384615384615,227.39230769230767 1440,220 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,400 L 0,300 C 89.38205128205132,314.8307692307692 178.76410256410264,329.66153846153844 265,327 C 351.23589743589736,324.33846153846156 434.32564102564095,304.1846153846154 518,291 C 601.674358974359,277.8153846153846 685.9333333333334,271.59999999999997 748,271 C 810.0666666666666,270.40000000000003 849.9410256410256,275.41538461538465 927,279 C 1004.0589743589744,282.58461538461535 1118.302564102564,284.73846153846154 1210,288 C 1301.697435897436,291.26153846153846 1370.8487179487179,295.63076923076926 1440,300 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
-                        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,60 C 67.27179487179487,72.25641025641026 134.54358974358973,84.51282051282053 212,89 C 289.45641025641027,93.48717948717947 377.09743589743584,90.2051282051282 461,75 C 544.9025641025642,59.7948717948718 625.0666666666666,32.66666666666667 703,35 C 780.9333333333334,37.33333333333333 856.6358974358976,69.12820512820512 933,79 C 1009.3641025641024,88.87179487179488 1086.3897435897436,76.82051282051282 1171,70 C 1255.6102564102564,63.179487179487175 1347.8051282051283,61.58974358974359 1440,60 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.265" className="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,140 C 103.40769230769229,136.02307692307693 206.81538461538457,132.04615384615386 272,132 C 337.1846153846154,131.95384615384614 364.14615384615394,135.83846153846153 438,139 C 511.85384615384606,142.16153846153847 632.5999999999999,144.59999999999997 719,146 C 805.4000000000001,147.40000000000003 857.4538461538464,147.7615384615385 924,150 C 990.5461538461536,152.2384615384615 1071.5846153846153,156.35384615384615 1160,155 C 1248.4153846153847,153.64615384615385 1344.2076923076925,146.82307692307694 1440,140 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.4" className="transition-all duration-300 ease-in-out delay-150 path-1"></path><path d="M 0,400 L 0,220 C 69.13846153846154,228.9923076923077 138.27692307692308,237.9846153846154 213,241 C 287.7230769230769,244.0153846153846 368.03076923076924,241.0538461538461 450,228 C 531.9692307692308,214.9461538461539 615.6,191.80000000000004 700,193 C 784.4,194.19999999999996 869.5692307692308,219.74615384615382 942,232 C 1014.4307692307692,244.25384615384618 1074.123076923077,243.21538461538464 1155,239 C 1235.876923076923,234.78461538461536 1337.9384615384615,227.39230769230767 1440,220 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="0.53" className="transition-all duration-300 ease-in-out delay-150 path-2"></path><path d="M 0,400 L 0,300 C 89.38205128205132,314.8307692307692 178.76410256410264,329.66153846153844 265,327 C 351.23589743589736,324.33846153846156 434.32564102564095,304.1846153846154 518,291 C 601.674358974359,277.8153846153846 685.9333333333334,271.59999999999997 748,271 C 810.0666666666666,270.40000000000003 849.9410256410256,275.41538461538465 927,279 C 1004.0589743589744,282.58461538461535 1118.302564102564,284.73846153846154 1210,288 C 1301.697435897436,291.26153846153846 1370.8487179487179,295.63076923076926 1440,300 L 1440,400 L 0,400 Z" stroke="none" strokeWidth="0" fill="#ffffff" fillOpacity="1" className="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg> */}
-
                         <svg className="w-full h-[14vh] min-h-[100px] max-h-[250px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 200 40" preserveAspectRatio="none" shapeRendering="auto">
                             <defs>
                                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -47,17 +47,64 @@ export default function App() {
 
                 </div>
             </section>
-            <section className='w-screen h-screen bg-white -mt-1 grid grid-cols-2 gap-6 px-40 py-12' >
-                <div className='bg-gray-100 w-full h-full flex flex-col items-center justify-center gap-6 overflow-hidden'>
+            <section className='w-screen h-screen bg-white -mt-1 grid grid-cols-2 gap-6 px-64 py-12' >
+                <div className=' w-full h-full flex flex-col items-center justify-center gap-6 overflow-hidden'>
                     <Typography placeholder={''} data-aos='fade-right' variant='h2'>Apoio para uma Vida Saudável Sustentável</Typography>
                     <Typography className='' variant='lead' placeholder={''} data-aos="fade-right" data-aos-delay={200}>
                 Alcançar seu objetivo de perda de peso é uma grande vitória. Entendemos os desafios de manter esse sucesso a longo prazo e estamos aqui para apoiá-lo em cada passo dessa jornada para um estilo de vida saudável e sustentável.
+                    </Typography>
+
+                    <Typography className='' variant='lead' placeholder={''} data-aos="fade-right" data-aos-delay={200}>
+                    Muitas vezes, as dietas focam apenas na perda de peso a curto prazo, sem oferecer um plano realista para a manutenção a longo prazo. Isso leva muitas pessoas a recuperarem o peso perdido assim que retornam aos seus antigos hábitos alimentares e de estilo de vida.
+                    </Typography>
+
+                    <Typography className='' variant='lead' placeholder={''} data-aos="fade-right" data-aos-delay={200}>
+                    Acreditamos que a chave para manter o peso perdido está na mudança de hábitos sustentáveis. Em vez de adotar dietas extremas ou soluções rápidas, incentivamos uma abordagem gradual e realista para a perda e manutenção de peso.
                     </Typography>
 
                     <Button className='' size='lg' placeholder={''} color='green' fullWidth data-aos="fade-right" data-aos-delay={400}>Saiba mais</Button>
                 </div>
 
                 <div className='bg-gray-100 w-full h-full '>
+
+                </div>
+            </section>
+
+            <section className='w-screen h-screen bg-no-repeat bg-center bg-cover relative' style={{ backgroundImage: `url(${GenteNoCampo})`}}>
+                <div className='w-full h-full  backdrop-blur-[3px] pb-12 pt-32 bg-gradient-to-r relative from-[rgba(125,217,86,0.96)] to-[rgba(186,206,74,.9)] items-center flex-col flex justify-center'>
+                    <div className='w-full col-span-2 flex items-center justify-center flex-col mt-12'>
+                        <Typography className='font-bold ' variant='lead' placeholder={''} color='black'>
+                    Descubra a chave para uma vida saudável com nosso ebook exclusivo
+                        </Typography>
+
+                        <Typography variant='h2' placeholder={''}>
+                        Como Manter o Peso Perdido
+                        </Typography>
+                    </div>
+                    
+                    <div className='w-full flex px-52 gap-12'>
+                        <img src={Ebook1} className='h-[38rem] object-cover object-center' data-aos="fade-up"/>
+                    
+                        <div className=' w-full h-full flex flex-col items-center justify-center gap-6 overflow-hidden' data-aos="fade-up" data-aos-delay={200}>
+                            <Typography placeholder={''} variant='lead'>
+                            Enquanto você embarca nesta jornada emocionante de manter o peso perdido, nada é mais valioso do que ter as ferramentas certas ao seu alcance.
+                            </Typography>
+                        </div>
+
+                    </div>
+                    <div className='w-full absolute top-0 flex rotate-180 -mt-1'>
+                        <svg className="w-full h-[14vh] min-h-[100px] max-h-[250px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 20 200 40" preserveAspectRatio="none" shapeRendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            <g className="parallax">
+                                <use href="#gentle-wave" x="10" y="-6" fill="rgba(255,255,255,0.8)" />
+                                <use href="#gentle-wave" x="55" y="1" fill="rgba(255,255,255,0.6)" />
+                                <use href="#gentle-wave" x="42" y="4" fill="rgba(255,255,255,0.2)" />
+                                <use href="#gentle-wave" x="12" y="10" fill="#fff" />
+                            </g>
+                        </svg>
+                    </div>
 
                 </div>
             </section>
